@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, PixelRatio} from 'react-native';
 
 export default class Headcomp extends React.Component {
   render() {
@@ -13,7 +13,11 @@ export default class Headcomp extends React.Component {
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: '#eeeeee',
+    width: '100%',
+    height: PixelRatio.getPixelSizeForLayoutSize(40),
+    lineHeight: PixelRatio.getPixelSizeForLayoutSize(40),
+    textAlign: 'center',
+    backgroundColor: 'green',
     fontSize: 36,
     color: '#000000'
   },

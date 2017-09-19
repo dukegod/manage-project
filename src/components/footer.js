@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, PixelRatio} from 'react-native';
 
 export default class Footercomp extends React.Component {
   constructor(props) {
@@ -34,13 +34,21 @@ export default class Footercomp extends React.Component {
 
 const styles = StyleSheet.create({
   fc:{
-    backgroundColor: '#eeeeee',
+    width: '100%',
+    height: PixelRatio.getPixelSizeForLayoutSize(16),
+    backgroundColor: '#fff',
+    flexDirection: 'row',
+    flexWrap: 'nowrap',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   but: {
-    // display: 'flex',
     // flex: 1,
-    // flexDirection: 'row',
-    flex: 1,
-    fontSize: 36,
+    width: '33%',
+    // height: PixelRatio.getPixelSizeForLayoutSize(16),
+    backgroundColor: 'red',
+    // lineHeight: PixelRatio.getPixelSizeForLayoutSize(16),
+    // textAlign: 'center',
+    fontSize: PixelRatio.getPixelSizeForLayoutSize(10),
   },
 });
