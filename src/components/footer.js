@@ -1,18 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, PixelRatio} from 'react-native';
+import { StyleSheet, Text, View, Button, PixelRatio } from 'react-native';
 
 export default class Footercomp extends React.Component {
   constructor(props) {
+    var ii = 90;
     super(props);
     this.state = {};
   }
-  onPressLearnMore(e) {
-    console.log(e);
+  onPressLearnMore() {
+    console.log(this);
   }
   render() {
     return (
       <View style={styles.fc}>
-        <Button style={styles.but}
+        <View style={{ width: 50, height: 50, backgroundColor: 'green' }} />
+        <View style={{ width: 50, height: 50, backgroundColor: 'skyblue' }} />
+        <View style={{ width: 50, height: 50, backgroundColor: 'green' }} />
+        {/* <Button style={styles.but}
           onPress={this.onPressLearnMore.bind(this)}
           title="已经完成"
           color="green"
@@ -26,21 +30,21 @@ export default class Footercomp extends React.Component {
           onPress={this.onPressLearnMore.bind(this)}
           title="未完成..."
           color="#ff0000"
-        />
+        /> */}
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  fc:{
+  fc: {
     width: '100%',
     height: PixelRatio.getPixelSizeForLayoutSize(16),
     backgroundColor: '#fff',
     flexDirection: 'row',
     flexWrap: 'nowrap',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   but: {
     // flex: 1,

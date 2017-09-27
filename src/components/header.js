@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, PixelRatio} from 'react-native';
+import { StyleSheet, Text, View, PixelRatio } from 'react-native';
 
 export default class Headcomp extends React.Component {
   render() {
