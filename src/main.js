@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView} from 'react-native';
 import Headcomp from './components/header';
 import Footercomp from './components/footer';
 import ListPage from './pages/listItem';
@@ -9,7 +9,9 @@ export default class Main extends React.Component {
     return (
       <View style={styles.container}>
         <Headcomp/>
-        <ListPage/>
+        <ScrollView style={{ backgroundColor: '#ffffff' }}>
+          <ListPage/>
+        </ScrollView>
         <Footercomp/>
       </View>
     );
@@ -18,6 +20,7 @@ export default class Main extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#ffffff'
+    backgroundColor: '#ffffff',
+    flex : 1,
   },
 });

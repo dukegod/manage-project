@@ -5,7 +5,7 @@ export default class Headcomp extends React.Component {
   render() {
     return (
       <View>
-        <Text style={styles.header}> Project Manage </Text>
+        <Text style={styles.header}> Fuel consumption statistics </Text>
       </View>
     );
   }
