@@ -12,7 +12,7 @@ export default class Footercomp extends React.Component {
   render() {
     return (
       <View style={styles.fc}>
-        <View style={{ width: '100%', height: 20, backgroundColor: 'red' }} />
+        <View style={{ width: '100%', height: '100%', backgroundColor: 'grey' }} />
       </View>
     );
   }

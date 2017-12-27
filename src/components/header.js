@@ -2,6 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, PixelRatio } from 'react-native';
 
 export default class Headcomp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  onPressLearnMore() {
+    console.log(this);
+  }
   render() {
     return (
       <View>
@@ -14,11 +21,12 @@ export default class Headcomp extends React.Component {
 const styles = StyleSheet.create({
   header: {
     width: '100%',
-    height: PixelRatio.getPixelSizeForLayoutSize(40),
-    lineHeight: PixelRatio.getPixelSizeForLayoutSize(40),
+    height: PixelRatio.getPixelSizeForLayoutSize(60),
+    lineHeight: PixelRatio.getPixelSizeForLayoutSize(80),
     textAlign: 'center',
     backgroundColor: 'green',
-    fontSize: 36,
+    fontSize: 30,
     color: '#000000'
-  },
+    // marginTop: ''
+  }
 });
